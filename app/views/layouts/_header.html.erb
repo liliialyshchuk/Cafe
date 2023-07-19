@@ -1,0 +1,43 @@
+<nav class="navbar navbar-expand-lg bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">FISH</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#"><%= link_to "Про нас", about_path, class: "nav-link" %></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><%= link_to "Контакти", contact_path, class: "nav-link" %></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><%= link_to "Галерея", gallery_path, class: "nav-link" %></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><%= link_to "Вакансії", vacancies_path, class: "nav-link" %></a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="#"><%= link_to "Відгуки", feedback_path, class: "nav-link" %></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" <%= link_to "Меню", menu_path %> </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Напої</a></li>
+            <li><a class="dropdown-item" href="#">Десерти</a></li>
+            <li><a class="dropdown-item" href="#">Перші страви</a></li>
+            <li><a class="dropdown-item" href="#">Основні страви</a></li>
+            <li><a class="dropdown-item" href="#">Гарніри</a></li>
+            <li><a class="dropdown-item" href="#">Салати</a></li>
+            <li><a class="dropdown-item" href="#">Закуски</a></li>
+            <li><a class="dropdown-item" href="#"><%= link_to "Все меню", menu_path, class: "nav-link" %></a></li>
+          </ul>
+         <li class="nav-item">
+          <a class="nav-link" href="#"><%= link_to "Корзина", shoppingchart_path, class: "nav-link" %></a>
+        </li>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
